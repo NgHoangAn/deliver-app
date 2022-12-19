@@ -38,3 +38,13 @@ deliver-app
         avatar
     create  /* -> mainContainer
             /createItem -> createContainer
+
+## user_auth
+    img avatar -> dùng motion cho smoothy
+        wrap App trong AnimatePresence
+        motion cho img
+    tạo file .env chứa firebase
+            firebase.config.js kết nối với firebase
+
+    event onClick khi click vào avatar -> login with GG
+    
