@@ -28,4 +28,13 @@ deliver-app
         + chỉnh css header theo mobile & window-table
     - add img folder
 
-    
+## header
+    left
+        icon
+        name
+    right
+        menu
+        icon
+        avatar
+    create  /* -> mainContainer
+            /createItem -> createContainer
