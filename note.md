@@ -58,4 +58,14 @@ deliver-app
 
     lưu info user vào local storage
     lấy ra và gán vào initstate
-    
+
+    header ở mobile
+    logout onclick
+
+## main container
+    css cho phần main top left
+
+    css main top right
+        chia ra main container <-- home container 
+    add file data.js
+    cho overflow-x hidden cho phan heroBg
