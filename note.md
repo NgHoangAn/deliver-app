@@ -54,4 +54,8 @@ deliver-app
             init.js / reducer(get_user) / state provider
         
     lấy ra user khi login trên header/avatar
+## making state persist on refesh
+
+    lưu info user vào local storage
+    lấy ra và gán vào initstate
     
