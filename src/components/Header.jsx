@@ -8,13 +8,21 @@ import { app } from '../firebase.config.js'
 
 import Logo from '../img/logo.png';
 import Avatar from '../img/avatar.png';
+import { useStateValue } from '../context/StateProvider.js';
+import { actionType } from '../context/reducer.js';
 
 const Header = () => {
     const firebaseAuth = getAuth(app)
     const provider = new GoogleAuthProvider();
+
+    const [{user}, dispatch] = useStateValue()
+
     const login = async () => {
-        const res = await signInWithPopup(firebaseAuth, provider)
-        console.log(res)
+        const {user: {refreshToken, providerData}} = await signInWithPopup(firebaseAuth, provider)
+        dispatch({
+            type: actionType.SET_USER,
+            user: providerData[0]
+        })
 
     }
   return (

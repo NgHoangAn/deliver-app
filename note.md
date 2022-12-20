@@ -47,4 +47,11 @@ deliver-app
             firebase.config.js kết nối với firebase
 
     event onClick khi click vào avatar -> login with GG
+
+## state provider
+    dùng redux tạo state
+        tạo folder context
+            init.js / reducer(get_user) / state provider
+        
+    lấy ra user khi login trên header/avatar
     
